@@ -1,0 +1,9 @@
+<h1>Create an Album</h1>
+
+<form action="<%= albums_url %>" method="post">
+  <input type="hidden" name="album[band_id]" value="<%= params[:band_id] %>">
+  <%= auth_token %>
+  <label for="album[title]">Album Title</label>
+  <input type="text" name="album[title]" value="Enter Album Title">
+  <input type="submit">
+</form>
